@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Bebas Neue', cursive;
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.gangster-header {
+  background: url('https://www.transparenttextures.com/patterns/old-map.png') no-repeat center center/cover;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+  animation: slideIn 5s infinite alternate;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+.application-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+}
+
+.application-form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ffcc00;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.submit-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Benefits List Styling */
+.benefits-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+  line-height: 1.8;
+  font-size: 2rem;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+}
+
+/* Requirements List Styling */
+.requirements-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+  line-height: 1.8;
+  font-size: 2rem;
+}
+
+.requirements-list li {
+  margin-bottom: 10px;
+}
+
+/* Document List Styling */
+.document-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+  line-height: 1.8;
+  font-size: 2rem;
+}
+
+.document-list li {
+  margin-bottom: 10px;
+}
+
+/* Unique Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX

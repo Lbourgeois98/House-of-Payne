@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House of Payne Gameroom</title>
+  <!-- Import New Font (Bebas Neue) -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="gangster-header">
+    <img src="https://i.imgur.com/CoEOX86.jpg" alt="Logo" class="logo-img">
+    <h1 class="logo">House of Payne Gameroom</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#application">Application</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#process">Process</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to the Family</h2>
+        <p>Join the most exclusive gaming verification group in town.</p>
+      </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="application">
+      <h2>Verification Application</h2>
+      <form class="application-form" action="mailto:Jbpayne02@gmail.com" method="post" enctype="text/plain">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="pagename">Page Name:</label>
+        <input type="text" id="pagename" name="pagename" required>
+
+        <label for="besttime">Best Time for Phone Verification:</label>
+        <input type="text" id="besttime" name="besttime" required>
+
+        <label for="alternatecontact">Alternate Method of Contact:</label>
+        <input type="text" id="alternatecontact" name="alternatecontact" required>
+
+        <label for="backuppages">Backup Pages or Profiles:</label>
+        <input type="text" id="backuppages" name="backuppages">
+
+        <label for="role">Do you own, manage, load, or cashier this page?</label>
+        <select id="role" name="role" required>
+          <option value="">Select Role</option>
+          <option value="own">Own</option>
+          <option value="manage">Manage</option>
+          <option value="load">Load</option>
+          <option value="cashier">Cashier</option>
+        </select>
+
+        <label for="pageorigin">Was the page created, bought, or rented?</label>
+        <select id="pageorigin" name="pageorigin" required>
+          <option value="">Select Origin</option>
+          <option value="created">Created</option>
+          <option value="bought">Bought</option>
+          <option value="rented">Rented</option>
+        </select>
+
+        <label for="otherpages">Do you manage other pages? (If yes, list them):</label>
+        <textarea id="otherpages" name="otherpages"></textarea>
+
+        <label for="businessduration">How long have you been in business?</label>
+        <input type="text" id="businessduration" name="businessduration" required>
+
+        <label for="agentduration">How long have you been an agent?</label>
+        <input type="text" id="agentduration" name="agentduration" required>
+
+        <label for="experience">How much experience do you have in this field?</label>
+        <input type="text" id="experience" name="experience" required>
+
+        <label for="employees">Number of employees: (nicknames accepted):</label>
+        <input type="text" id="employees" name="employees" required>
+
+        <label for="playerissues">Do you have any ongoing player issues? If yes, what kind?</label>
+        <textarea id="playerissues" name="playerissues"></textarea>
+
+        <label for="promoter">Do you need a promoter?</label>
+        <select id="promoter" name="promoter" required>
+          <option value="">Select Option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="mopaccess">Do employees have access to M.O.P.s to cash out?</label>
+        <select id="mopaccess" name="mopaccess" required>
+          <option value="">Select Option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <label for="mopsbalances">M.O.P.s and balances:</label>
+        <textarea id="mopsbalances" name="mopsbalances"></textarea>
+
+        <label for="businesshours">Business hours:</label>
+        <input type="text" id="businesshours" name="businesshours" required>
+
+        <label for="cashouthours">Cashout hours:</label>
+        <input type="text" id="cashouthours" name="cashouthours" required>
+
+        <label for="procedure">What is your procedure for cashout problems or delays?</label>
+        <textarea id="procedure" name="procedure" required></textarea>
+
+        <label for="averagedeposit">Average deposit?</label>
+        <input type="text" id="averagedeposit" name="averagedeposit" required>
+
+        <label for="maxdaily">Your max daily cashout?</label>
+        <input type="text" id="maxdaily" name="maxdaily" required>
+
+        <label for="referred">Were you referred? If yes, by whom?</label>
+        <input type="text" id="referred" name="referred">
+
+        <label for="currentlyverified">Are you currently verified? If yes, by whom?</label>
+        <input type="text" id="currentlyverified" name="currentlyverified">
+
+        <label for="pastverification">Have you ever been verified in the past? If yes, by whom?</label>
+        <input type="text" id="pastverification" name="pastverification">
+
+        <label for="blacklisted">Have you ever been blacklisted, revoked, or suspended? If yes, explain why:</label>
+        <textarea id="blacklisted" name="blacklisted"></textarea>
+
+        <!-- Additional Questions Section -->
+        <h3>Additional Questions</h3>
+        <label for="gain">What do you hope to gain by being a part of House of Payne Gameroom?</label>
+        <textarea id="gain" name="gain" rows="4" required></textarea>
+
+        <label for="verificationmeaning">What does Verification mean to you?</label>
+        <textarea id="verificationmeaning" name="verificationmeaning" rows="4" required></textarea>
+
+        <label for="cashappaccess">Do all of your employees have CashApp access? Or do you have cashiers available for the business hours you have listed?</label>
+        <textarea id="cashappaccess" name="cashappaccess" rows="4" required></textarea>
+
+        <label for="loadingterms">Do you know what icing is? Self-loading? Or increment loading?</label>
+        <textarea id="loadingterms" name="loadingterms" rows="4" required></textarea>
+
+        <label for="compliance">Are you willing to comply with admin when problems occur and do whatever it takes to work with them to fix the problem?</label>
+        <textarea id="compliance" name="compliance" rows="4" required></textarea>
+
+        <label for="rulesunderstanding">Do you understand the rules of the group? Do you agree to pay any fines that are incurred for breaking these rules?</label>
+        <textarea id="rulesunderstanding" name="rulesunderstanding" rows="4" required></textarea>
+
+        <!-- Additional Documents Section -->
+        <h3>Please include the following screenshots of requested documents:</h3>
+        <ul class="document-list">
+          <li>Provide 3 customer referrals with contact details.</li>
+          <li>Proof of last 3 cashouts (SS of texts for proof). Personal info can be marked out.</li>
+          <li>Flyers.</li>
+          <li>Freeplay and referral bonus cashout rules.</li>
+          <li>Game lists.</li>
+          <li>Promos/bonuses.</li>
+          <li>Gameroom rules.</li>
+          <li>Cashout rules.</li>
+        </ul>
+
+        <label for="documents">Upload Screenshots/Documents:</label>
+        <input type="file" id="documents" name="documents" multiple required>
+
+        <!-- Signature and Date -->
+        <label for="signature">Signature/Initials:</label>
+        <input type="text" id="signature" name="signature" placeholder="Sign here" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </section>
+
+    <!-- Secret Players Section -->
+    <section id="secret-players">
+      <h2>Secret Players Testing</h2>
+      <p>
+        As part of the verification process, you will be required to participate in a secret player testing phase. Here’s how it works:
+      </p>
+      <ul class="secret-players-list">
+        <li><strong>Agent Pays for Testing:</strong> Cost is $40.</li>
+        <li><strong>Unknown Players:</strong> You will not know who the players are.</li>
+        <li><strong>Cashout Obligation:</strong> You must cash out these players as per their requests.</li>
+        <li><strong>Transaction Records:</strong> I will request transaction records of players I send.</li>
+        <li><strong>Refund Policy:</strong> Your deposit will be refunded if the player successfully cashes out.</li>
+        <li><strong>Passing Criteria:</strong> Cashing out does not guarantee you pass. Feedback from players plays a key role in determining your eligibility for the next phase.</li>
+        <li><strong>Number of Players:</strong> I will send 3-4 players for testing.</li>
+        <li><strong>Timeline:</strong> Testing will take approximately 12-24 hours. Players will not arrive all at once.</li>
+      </ul>
+      <p>
+        This phase is critical to ensuring that you meet the standards of House of Payne Gameroom. Failure to comply with the testing requirements will result in disqualification.
+      </p>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+      <h2>Why Join House of Payne Gameroom?</h2>
+      <ul class="benefits-list">
+        <li><strong>600+ Members:</strong> Be part of a thriving community of verified agents and players.</li>
+        <li><strong>20k Reach:</strong> Gain access to a vast network of potential customers.</li>
+        <li><strong>Exclusive Group:</strong> A private, invite-only community for verified members only.</li>
+        <li><strong>Spam-Free Environment:</strong> Enjoy a clean, professional space without distractions.</li>
+        <li><strong>Advertising Opportunities:</strong> Promote your business to a targeted audience.</li>
+        <li><strong>24/7 Admin Assistance:</strong> Get help whenever you need it from dedicated admins.</li>
+        <li><strong>Business Growth Support:</strong> Access resources and tools to scale your operations.</li>
+        <li><strong>Advice and Tips:</strong> Learn from experienced agents and admins.</li>
+        <li><strong>New Player Acquisition:</strong> Tap into our network to attract more customers.</li>
+        <li><strong>Player Scams Intel:</strong> Stay informed about potential scams and protect your business.</li>
+        <li><strong>Advocate Support:</strong> We’ll stand by you in disputes and negotiations.</li>
+        <li><strong>Conflict Resolution:</strong> Admins will assist in resolving conflicts with difficult players.</li>
+      </ul>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requirements">
+      <h2>Membership Requirements</h2>
+      <ul class="requirements-list">
+        <li>6+ months of experience in the field.</li>
+        <li>Multiple payment methods available for cashouts.</li>
+        <li>Never been blacklisted or revoked from any platform.</li>
+        <li>3x your max cashout available to pay players at all times.</li>
+        <li>Proof of your 3 most recent cashouts (screenshots or statements).</li>
+        <li>Provide an alternative method of contact (e.g., email, phone).</li>
+        <li>Must be the owner or manager of the page/profile.</li>
+        <li>Must agree to all rules, fines, and fees set by House of Payne Gameroom.</li>
+        <li>Fill out the application honestly and completely.</li>
+      </ul>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+      <h2>Verification Process</h2>
+      <p>
+        1. Fill out the application form.<br>
+        2. Pass the background check and secret player testing phase.<br>
+        3. Get verified within 48 hours.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 House of Payne Gameroom. All rights reserved.</p>
+  </footer>
+</body>
+</html>
